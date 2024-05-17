@@ -17,7 +17,6 @@ package Semester4.modul5;
         root = null;
     }
 
-    //fungsi untuk menambahkan node secara manual ke tree
     public void addroot(int data){
         root = new Node(data);
     }
@@ -46,14 +45,12 @@ package Semester4.modul5;
 
      public static void main(String[] args) {
          BinaryTree tree = new BinaryTree();
-
-         //menentukan struktur tree secara manual
-         tree.addroot(20); //root
-         tree.root.left = new Node(2); //menambahkan node ke kiri root
-         tree.root.right = new Node(25); //menambahkan node ke kanan root
-         tree.root.left.left = new Node(37); //menambahkan node ke kiri dari node kiri root
-         tree.root.left.right = new Node(12); //menambahkan node ke kiri dari node kiri root
-         tree.root.right.right = new Node(16); //menambahkan node ke kanan dari node kanan root
+       
+         tree.addroot(20); 
+         tree.root.left = new Node(2);
+         tree.root.right = new Node(25);
+         tree.root.left.left = new Node(37);
+         tree.root.left.right = new Node(12);
 
          System.out.println("\nPre Order: ");
          tree.preOrder(tree.root);
